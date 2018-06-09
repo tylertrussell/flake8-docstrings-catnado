@@ -1,12 +1,5 @@
 from setuptools import setup
-
-
-def get_version(fname='flake8_docstrings.py'):
-  with open(fname) as f:
-    for line in f:
-      if line.startswith('__version__'):
-        return eval(line.split('=')[-1])
-
+from flake8_docstrings import __version__
 
 def get_long_description():
   descr = []
@@ -18,7 +11,7 @@ def get_long_description():
 
 setup(
   name='flake8-docstrings-catnado',
-  version=get_version(),
+  version=__version__,
   description='a fork of flake8-docstrings-catnado',
   long_description=get_long_description(),
   license='MIT License',
