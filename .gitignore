@@ -1,5 +1,6 @@
 *.pyc
 *.orig
+.*/
 flake8_docstrings.egg-info
 dist/
 .tox/
