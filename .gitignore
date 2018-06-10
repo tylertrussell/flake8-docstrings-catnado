@@ -1,7 +1,7 @@
 *.pyc
 *.orig
 .*/
-flake8_docstrings.egg-info
+flake8_docstrings_catnado.egg-info/
 dist/
 .tox/
 build/

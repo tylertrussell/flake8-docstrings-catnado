@@ -18,7 +18,7 @@ except ImportError:
   import pep257
   module_name = 'pep257'
 
-__version__ = '0.0.1dev0'
+__version__ = '0.0.1dev1'
 __all__ = ('pep257Checker',)
 
 stdin.monkey_patch('pycodestyle')
@@ -101,8 +101,7 @@ class pep257Checker(object):
     """Use directly check() api from pydocstyle."""
     if self.exclude_from_doctest:
       for pattern in self.exclude_from_doctest:
-        filename = os.path.split(self.filename)[1]
-        if fnmatch.fnmatch(filename, pattern):
+        if fnmatch.fnmatch(self.filename, pattern):
           return
 
     checked_codes = pep257.conventions.pep257 | {'D998', 'D999'}

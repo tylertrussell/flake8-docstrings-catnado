@@ -16,6 +16,9 @@ Report any issues on the GitHub issue tracker.
 
 # Changelog
 
+### Version 0.0.1dev1
+* Don't `os.split` the `--exclude_from_doctest` options
+
 ### Version 0.0.1dev0
 
 * Forked from [`flake8-docstrings`](https://gitlab.com/pycqa/flake8-docstrings)

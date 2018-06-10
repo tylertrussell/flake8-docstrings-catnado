@@ -2,11 +2,8 @@ from setuptools import setup
 from flake8_docstrings import __version__
 
 def get_long_description():
-  descr = []
-  for fname in ('README.md'):
-    with open(fname) as f:
-      descr.append(f.read())
-  return '\n\n'.join(descr)
+  with open('README.md') as f:
+    return f.read()
 
 
 setup(
